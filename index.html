@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>To Do List</title>
-    
-    <script src="./js/vue.js"></script>
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
-    <header>
-        <h1>To Do List</h1>
-    </header>
-    <main class="ToDoList">
-        <input v-model="newlist" type="text" name=""/>
-        <ul>
-            <li> <!--v-for="item in items">-->
-                {{ newlist }}
-            </li>
-        </ul>
-        <!--<button class="btn-primary" id="validToDo">Valider</button>-->
-    </main>
-
-
-
-
-
-    <script src="./js/main.js"></script>
+  <header>
+    <h1>ToDo List</h1>
+  </header><!-- /header -->
+<main id="app">
+  <ul>
+    <li v-for="todo in todos">
+        {{ todo }}
+    </li>
+  </ul>
+  <input v-model="newList" v-on:keyup.enter="addTodo()" />
+</main>
+  <script src="./js/vue.js"></script>
+  <script src="./js/main.js"></script>
 </body>
-
 </html>
