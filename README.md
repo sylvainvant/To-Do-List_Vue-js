@@ -1,13 +1,13 @@
 # To-Do-List avec Vue.js
      
 
-    ![ToDo List Logo](/img/logo.jpg)    
-    Format: ![Alt Text](url)     
+![ToDo List Logo](./img/logo.jpg)    
+Format: ![Alt Text](url)     
                
 Livraison dans le cadre de la formation dev-web, réalisé une ToDo List avec Vue.js.     
      
 Critères:     
-• [ ] Avec Vue JS seulement.      
+ [ ] Avec Vue JS seulement.      
 • [ ] Pas de manipulation native DOM !!!          
 • [ ] Framework  CSS Materialize.        
 • [ ] Librairie Lodash autorisée.
