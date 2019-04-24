@@ -1,12 +1,35 @@
 # To-Do-List avec Vue.js
      
-        Dans le cadre un exercice de formation réalisé une ToDo List:
 
-• Avec Vue JS seulement      
-    => Pas de manipulation native DOM !!!     
-• Framework  CSS Materialize.    
-• Au minimum toutes les options de la précédente ToDo list.     
-• Librairie Lodash autorisée.  
+    ![ToDo List Logo](/img/logo.jpg)    
+    Format: ![Alt Text](url)     
+               
+Livraison dans le cadre de la formation dev-web, réalisé une ToDo List avec Vue.js.     
+     
+Critères:     
+• [ ] Avec Vue JS seulement.      
+• [ ] Pas de manipulation native DOM !!!          
+• [ ] Framework  CSS Materialize.        
+• [ ] Librairie Lodash autorisée.
+• [ ] Au minimum toutes les options de la précédente ToDo list.     
+               
+Options de la précédente ToDo list:     
+     
+• [ ] Ajouter à la liste si clique sur le  bouton.             
+• [x] Ajouter à la liste si la touche « Entrée » est appuyer.          
+• [ ] Une seule entrée (pas de répétitions sur le même évènement).     
+• [ ] Aucune entrée si champ vide.     
+• [ ] Format identique pour toutes les entrées (Capitalize : CSS ou JS).          
+     
+Bonus:     
+       
+• [ ] Rendre la todo liste la plus prope possible (CSS).     
+• [ ] Ajouter une option de suppression d’éléments.     
+• [ ] Ajouter une option toggle (item barré si acheté).    
+• [ ] Dark mode.     
+• [ ] Ajouter un compteur de quantité.     
+
+  
 
 
 
