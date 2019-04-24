@@ -28,9 +28,3 @@ Bonus:
 • :white_check_mark: Ajouter une option toggle (item barré si acheté).    
 • :white_check_mark: Dark mode.     
 • :white_check_mark: Ajouter un compteur de quantité.     
-
-  
-
-
-
-

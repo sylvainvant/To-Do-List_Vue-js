@@ -2,19 +2,20 @@
  *  ToDo List with vue.js
  */
 
-new Vue ({
-  el:"#app",
+let toDoList = new Vue ({
+  el:".app",
   data:{
-    todos:[
-      "toto",
-      "tata"
-    ]
+    todos:[],
+    newList: ''
     },
 
     methods:{
       addTodo: function(){
       this.todos.push(this.newList);
       this.newList="";
+      },
+      supTodo: function(index) {
+        this.todos.splice(index,1);
       }
     }
 });

@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ToDo List</title>
-  <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-  <header>
-    <h1>ToDo List</h1>
-  </header><!-- /header -->
-  <hr /><br />
-<main id="app">
-  <input v-model="newList" v-on:keyup.enter="addTodo()" />
-  <ul>
-    <li v-for="todo in todos">
-        {{ todo }}
-    </li>
-  </ul>
-</main>
-  <script src="./js/vue.js"></script>
-  <script src="./js/main.js"></script>
+    <header>
+        <h1>ToDo List</h1>
+    </header><!-- /header -->
+    <hr /><br />
+    <main class="app">
+        <input v-model="newList" v-on:keyup.enter="addTodo" />
+        <button class="btn-add" type="button" v-on:click="addTodo">Add</button>
+        <ul>
+            <li v-for="(todo, index) in todos">
+                {{ todo }}
+                <button class="btn-sup" type="button" v-on:click="supTodo(index)"> X</button>
+            </li>
+        </ul>
+    </main>
+
+    <script src="./js/vue.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
