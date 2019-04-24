@@ -11,13 +11,14 @@
   <header>
     <h1>ToDo List</h1>
   </header><!-- /header -->
+  <hr /><br />
 <main id="app">
+  <input v-model="newList" v-on:keyup.enter="addTodo()" />
   <ul>
     <li v-for="todo in todos">
         {{ todo }}
     </li>
   </ul>
-  <input v-model="newList" v-on:keyup.enter="addTodo()" />
 </main>
   <script src="./js/vue.js"></script>
   <script src="./js/main.js"></script>
