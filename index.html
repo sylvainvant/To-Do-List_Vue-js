@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To Do List</title>
+    
     <script src="./js/vue.js"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -14,12 +15,14 @@
     <header>
         <h1>To Do List</h1>
     </header>
-    <main class="to-do-list">
-        <input v-model="form-control" type="text" name="" id="txtToDo" />
+    <main class="ToDoList">
+        <input v-model="newlist" type="text" name=""/>
         <ul>
-
+            <li> <!--v-for="item in items">-->
+                {{ newlist }}
+            </li>
         </ul>
-        <button class="btn-primary" id="validToDo">Valider</button>
+        <!--<button class="btn-primary" id="validToDo">Valider</button>-->
     </main>
 
 
