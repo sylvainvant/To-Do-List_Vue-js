@@ -7,26 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ToDo List</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/materialize.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>ToDo List</h1>
-    </header><!-- /header -->
+    <div class="row">
+            <header class="center-align">
+                <h1 class="blue-text text-darken-1 card-panel amber darken-4">ToDo List</h1>
+            </header><!-- /header -->
+    </div>
     <hr /><br />
-    <main class="app">
-        <input v-model="newList" v-on:keyup.enter="addTodo" />
-        <button class="btn-add" type="button" v-on:click="addTodo">Add</button>
-        <ul>
-            <li v-for="(todo, index) in todos">
-                {{ todo | capitalize }}
-                <button class="btn-sup" type="button" v-on:click="supTodo(index)"> X </button>
-            </li>
-        </ul>
-    </main>
+            <main class="app center-align">
+                    <div class="row">
+                        <div class="col s12 m4 l4"><p></p></div>
+                        <div class="col s12 m4 l4"><input class="flow-text" v-model="newList" v-on:keyup.enter="addTodo"/></div>
+                        <div class="col s12 m4 l4"><p></p></div>
+                    </div>            
+                <!-- <input class="flow-text" v-model="newList" v-on:keyup.enter="addTodo"/> -->
+                <button class="btn-add" type="button" v-on:click="addTodo">Add</button>
+        </div>
+                <ul>
+                    <li v-for="(todo, index) in todos">
+                        {{ todo | capitalize }}
+                        <button class="btn-sup" type="button" v-on:click="supTodo(index)"> X </button>
+                    </li>
+                </ul>
+            </main>
+        </div>
 
     <script src="./js/vue.js"></script>
     <script src="./js/main.js"></script>
+
+    <script src="./js/materialize.min.js"></script>
+
 </body>
 
 </html>
