@@ -24,12 +24,12 @@
                         <div class="col s12 m4 l4"><p></p></div>
                     </div>            
                 <!-- <input class="flow-text" v-model="newList" v-on:keyup.enter="addTodo"/> -->
-                <button class="btn-add" type="button" v-on:click="addTodo">Add</button>
+                <button class="btn-add waves-effect waves-light btn-large" type="button" v-on:click="addTodo">Add</button>
         </div>
                 <ul>
                     <li v-for="(todo, index) in todos">
                         {{ todo | capitalize }}
-                        <button class="btn-sup" type="button" v-on:click="supTodo(index)"> X </button>
+                        <button class="btn-sup waves-effect waves-light btn card-panel red darken-1" type="button" v-on:click="supTodo(index)"> X </button>
                     </li>
                 </ul>
             </main>
