@@ -19,8 +19,8 @@
         <button class="btn-add" type="button" v-on:click="addTodo">Add</button>
         <ul>
             <li v-for="(todo, index) in todos">
-                {{ todo }}
-                <button class="btn-sup" type="button" v-on:click="supTodo(index)"> X</button>
+                {{ todo | capitalize }}
+                <button class="btn-sup" type="button" v-on:click="supTodo(index)"> X </button>
             </li>
         </ul>
     </main>
