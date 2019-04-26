@@ -11,29 +11,36 @@
 </head>
 
 <body>
-    <div class="row">
-            <header class="center-align">
-                <h1 class="blue-text text-darken-1 card-panel amber darken-4">ToDo List</h1>
-            </header><!-- /header -->
+        <header class=" row center-align hoverable">
+            <h1 class="white-text text-white card-panel blue darken-1">ToDo List</h1>
+            <hr />
+        </header><!-- /header -->
+  
+    <main class="app center-align">
+        <div class="row">
+            <div class="col s12 m4 l4é">
+                <p></p>
+            </div>
+            <div class="col s12 m4 l4">
+                <p><input class="flow-text" v-model="newList" v-on:keyup.enter="addTodo" type="text" /></p>
+            </div>
+            <div class="col s12 m4 l4">
+                <p></p>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="btn-add waves-effect waves-light btn-large" type="button" v-on:click="addTodo">Add</button>
+        </div>
+        <!-- <input class="flow-text" v-model="newList" v-on:keyup.enter="addTodo"/> -->
+        <ul>
+            <li v-for="(todo, index) in todos">
+                {{ todo | capitalize }}
+                <button class="btn-sup waves-effect waves-light btn card-panel red darken-1" type="button"
+                    v-on:click="supTodo(index)"> X </button>
+            </li>
+        </ul>
+    </main>
     </div>
-    <hr /><br />
-            <main class="app center-align">
-                    <div class="row">
-                        <div class="col s12 m4 l4"><p></p></div>
-                        <div class="col s12 m4 l4"><input class="flow-text" v-model="newList" v-on:keyup.enter="addTodo"/></div>
-                        <div class="col s12 m4 l4"><p></p></div>
-                    </div>            
-                <!-- <input class="flow-text" v-model="newList" v-on:keyup.enter="addTodo"/> -->
-                <button class="btn-add waves-effect waves-light btn-large" type="button" v-on:click="addTodo">Add</button>
-        </div>
-                <ul>
-                    <li v-for="(todo, index) in todos">
-                        {{ todo | capitalize }}
-                        <button class="btn-sup waves-effect waves-light btn card-panel red darken-1" type="button" v-on:click="supTodo(index)"> X </button>
-                    </li>
-                </ul>
-            </main>
-        </div>
 
     <script src="./js/vue.js"></script>
     <script src="./js/main.js"></script>

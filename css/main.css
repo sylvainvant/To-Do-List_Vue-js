@@ -1,5 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 li{
-    font-size: 2em;
+    font-size: 3em;
+}
+
+h1 {
+    box-shadow: 0 4px 0 0 #b2b2b2 !important;
 }
 
 .btn-sup {
@@ -7,4 +16,14 @@ li{
     background-color:white;
     border: none;
     font-size: 1.2em;
+}
+
+.btn-container {
+    margin-bottom: 40px;
+}
+
+input {
+    font-size: 3em !important;
+    border-radius: 5px !important; 
+    border: solid #b3b3b3 2px !important;
 }
